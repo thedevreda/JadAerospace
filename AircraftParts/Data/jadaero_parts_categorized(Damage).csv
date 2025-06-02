@@ -26,14 +26,14 @@ L95F50-603,OVERPRESSURE PROTECTOR,"Part Number: L95F50-603Description: PROTECT
 GA62923,PIPE ASSY,"Part Number: GA62923Description: PIPE ASSY",other,Unknown,On-condition
 D126111-504,PASSENGER SERVICE UNIT,"Part Number: D126111-504Description: PSU, LONG LOUD SPEAKER (RH)",other,Unknown,On-condition
 7439FT972,SEAL-T RING,"Part Number: 7439FT972Description: SEAL ASSEMBLY AGT RING",engines,Extreme,On-condition (ultrasound every 500 cycles)
-9527106-501,"BOX, RELAY","Part Number: 9527106-501Description: RELAY BOX ASSY(COCKPIT DOOR)",other,Unknown,On-condition
+9527106-501,"BOX, RELAY","Part Number: 9527106-501Description: RELAY BOX ASSY(COCKPIT DOOR)",electrical_systems,High,2 years (or capacity < 80%)
 4275-1-011-8110,RESTRAINT SYSTEM,"Part Number: 4275-1-011-8110Description: RESTRAINT SYSTEM",avionics,Moderate,2 years (or capacity < 80%)
 111-1-1100,"SWITCH, PRESSURE","Part Number: 111-1-1100Description: PRESSURE SWITCH",other,Unknown,On-condition
 2041217-0418,WEATHER RADAR TRANSCEIVER,"Part Number: 2041217-0418Description: TRANSCEIVER-WEATHER RADAR",avionics,Moderate,2 years (or capacity < 80%)
 822-0987-003,COUPLER-HF ANTENNA,"Part Number: 822-0987-003Description: HF DIGITAL ANTENNA COUPLER",avionics,Moderate,2 years (or capacity < 80%)
 C14135DA,AIR DATA PROBE LEFT,"Part Number: C14135DADescription: PROBE - AIR DATA, LEFT",fuel_systems,High,"5,000hrs (flow < 90% spec)"
 NP157901-22,WINDSHIELD ASSY (RH),"Part Number: NP157901-22Description: WINDSHIELD ASSY (RH)",other,Unknown,On-condition
-LH1460205,DUCT ASSY PYLON,"Part Number: LH1460205Description: DUCT ASSY-PYLON",other,Unknown,On-condition
+LH1460205,DUCT ASSY PYLON,"Part Number: LH1460205Description: DUCT ASSY-PYLON",pneumatic_systems,High,"6,000hrs (vibration monitoring)"
 3009243,"BEARING, BALL, FLANGED","Part Number: 3009243Description: BEARING, BALL, FLANGED",landing_gear,Extreme,200-300 landings (or tread depth < 2mm)
 740-0445-511,BEAM ASSY,"Part Number: 740-0445-511Description: BEAM ASSY, FORWARD CROSSOVER",other,Unknown,On-condition
 PL1100LH01,LIGHT STRIP,"Part Number: PL1100LH01Description: LIGHT STRIP OCEAN TINT",other,Unknown,On-condition
@@ -63,7 +63,7 @@ PR1425B-1/2-CF,SEALANT,"Part Number: PR1425B-1/2-CFDescription: SEALANT: POLYS
 211505-811,T-DIVIDER ASSY,"Part Number: 211505-811Description: T-DIVIDER ASSY",interior_components,Low,On-condition
 442653,HMU-HYDROMECHANICAL UNIT,"Part Number: 442653Description: HYDRO MECHANICAL UNIT",engines,Extreme,On-condition (ultrasound every 500 cycles)
 8TJ146CFA1,SENSOR – OIL LEVEL,"Part Number: 8TJ146CFA1Description: OIL LEVEL SENSOR QTY",other,Unknown,On-condition
-336-063-001-0,DUCT-AIR,"Part Number: 336-063-001-0Description: DUCT-AIR",other,Unknown,On-condition
+336-063-001-0,DUCT-AIR,"Part Number: 336-063-001-0Description: DUCT-AIR",pneumatic_systems,High,"6,000hrs (vibration monitoring)"
 3031863-001,HYDRAULIC PUMP,"Part Number: 3031863-001Description: PUMP HYDRAULIC",fuel_systems,High,"5,000hrs (flow < 90% spec)"
 1FA14012-8,"ACTUATOR, COWL DOOR","Part Number: 1FA14012-8Description: ACTUATOR-THRUST REVERSER COWL OPENING",flight_controls,Extreme,"5,000hrs (leak > 3 drops/hr)"
 65-90305-58,"KIT, FILTER","Part Number: 65-90305-58Description: KIT: FILTER ELEMENT,OIL, BOEING 737",fuel_systems,High,"5,000hrs (flow < 90% spec)"
@@ -78,7 +78,7 @@ PR1425B-1/2-CF,SEALANT,"Part Number: PR1425B-1/2-CFDescription: SEALANT: POLYS
 D5211026920000,BOLT,"Part Number: D5211026920000Description: BOLT",other,Unknown,On-condition
 150SG1009-5,BRUSH ELECTRICAL,"Part Number: 150SG1009-5Description: BRUSH,STARTER GENERATOR",other,Unknown,On-condition
 892480,"EXTINGUISHER-FIRE, PORTABLE","Part Number: 892480Description: WATER PORTABLE FIRE EXTINGUISHER",flight_controls,Extreme,"5,000hrs (leak > 3 drops/hr)"
-D717-01-100,BATTERY PACK,"Part Number: D717-01-100Description: BATTERY EMER LIGHT",other,Unknown,On-condition
+D717-01-100,BATTERY PACK,"Part Number: D717-01-100Description: BATTERY EMER LIGHT",electrical_systems,High,2 years (or capacity < 80%)
 778000,FILTER-WATER,"Part Number: 778000Description: FILTER, FRESH WATER, RSA2",fuel_systems,High,"5,000hrs (flow < 90% spec)"
 28301-02,MASK ASSY,"Part Number: 28301-02Description: MASK ASSY-DISPOSABLE",other,Unknown,On-condition
 RD-KA8503-04,PASSENGER CONTROL UNIT,"Part Number: RD-KA8503-04Description: PCU-PASSENGER CONTROL UNIT",other,Unknown,On-condition
@@ -94,7 +94,7 @@ H3479-5,LATCH ASSY,"Part Number: H3479-5Description: PUSH BUTTON LATCH ASSEMBL
 82551317-005,"SUPPORT ASSY, NET","Part Number: 82551317-005Description: SUPPORT ASSY BAGG NET.",other,Unknown,On-condition
 BAC70846,PAINT,"Part Number: BAC70846Description: PAINT",other,Unknown,On-condition
 L0060009,FLOODLIGHT,"Part Number: L0060009Description: FLOODLIGHT ASSY",other,Unknown,On-condition
-800485-2-010,"CONTROLLER, APU","Part Number: 800485-2-010Description: ELECTRONIC CONTROL UNIT",other,Unknown,On-condition
+800485-2-010,"CONTROLLER, APU","Part Number: 800485-2-010Description: ELECTRONIC CONTROL UNIT",air_conditioning,High,6 months (or ΔP > 4 inches H2O)
 3900473,DETENT ASSY,"Part Number: 3900473Description: DETENT ASSY",other,Unknown,On-condition
 2610-08-1,ELECTRONIC CHRONOMETER,"Part Number: 2610-08-1Description: CHRONOMETER, DIGITAL ELECTRONIC GMT, CLOCK",other,Unknown,On-condition
 799B020000,"COOLING UNIT,GROUND","Part Number: 799B020000Description: GRU-GROUND REFRIGERATION UNIT",other,Unknown,On-condition
@@ -129,7 +129,7 @@ D23581100-5,LEG ASSY-NLG,"Part Number: D23581100-5Description: LEG ASSY-NLG",l
 1019439-2-001,PANEL PRESSURE SELECTOR,"Part Number: 1019439-2-001Description: PANEL, PRESSURE SELECTOR",interior_components,Low,On-condition
 2A2917,SEAL,"Part Number: 2A2917Description: SEAL ASSY,#1 BEARING",engines,Extreme,On-condition (ultrasound every 500 cycles)
 1324M12P10,VSV ACTUATOR,"Part Number: 1324M12P10Description: ACTUATOR-VARIABLE STATOR",flight_controls,Extreme,"5,000hrs (leak > 3 drops/hr)"
-194792-4,PRECOOLER,"Part Number: 194792-4Description: BLEED-AIR PRECOOLER",other,Unknown,On-condition
+194792-4,PRECOOLER,"Part Number: 194792-4Description: BLEED-AIR PRECOOLER",pneumatic_systems,High,"6,000hrs (vibration monitoring)"
 21435-00,BEACON LOCATOR-UNDERWATER,"Part Number: 21435-00Description: BEACON-ACOUSTIC UNDERWATER LOCATOR",other,Unknown,On-condition
 1152464-265,START POWER UNIT,"Part Number: 1152464-265Description: APU START POWER UNIT",other,Unknown,On-condition
 50S055-001,"SHROUD SET, C-5 HPC","Part Number: 50S055-001Description: HPC 5TH STG SHROUD",engines,Extreme,On-condition (ultrasound every 500 cycles)
@@ -157,7 +157,7 @@ LM321SA19V,ISOLATOR VIBRATION,"Part Number: LM321SA19VDescription: AFT ISOLATO
 201590900,RETRACT ACT PIN,"Part Number: 201590900Description: RETRACT ACTUATOR PIN",avionics,Moderate,2 years (or capacity < 80%)
 VD3900-03,RECIRCULATION FAN,"Part Number: VD3900-03Description: FAN RECIRCULATION",other,Unknown,On-condition
 3289562-5,CONTROL VALVE PRE-COOLER,"Part Number: 3289562-5Description: VALVE ASSY, PRE COOLER CFM56-7",fuel_systems,High,"5,000hrs (flow < 90% spec)"
-21933-01AC,PRESSURE CONTROLLER,"Part Number: 21933-01ACDescription: CONTROLLER, CABIN PRESSURE",other,Unknown,On-condition
+21933-01AC,PRESSURE CONTROLLER,"Part Number: 21933-01ACDescription: CONTROLLER, CABIN PRESSURE",pneumatic_systems,High,"6,000hrs (vibration monitoring)"
 320-401-201-0,HARNESS,"Part Number: 320-401-201-0Description: HARNESS-WIRING CJ13",other,Unknown,On-condition
 101-410068-5,RADOME ASSY,"Part Number: 101-410068-5Description: CONE ASSY NOSE",avionics,Moderate,2 years (or capacity < 80%)
 315A2800-2,ACTUATOR,"Part Number: 315A2800-2Description: ACTUATOR ASSY-NON-LOCKING",flight_controls,Extreme,"5,000hrs (leak > 3 drops/hr)"
@@ -178,7 +178,7 @@ AC69924,BLEED VALVE,"Part Number: AC69924Description: VALVE, BLEED STG 7, HP C
 831A0000-02,"BRAKE, WING TIP","Part Number: 831A0000-02Description: BRAKE-WING TIP (NP)",avionics,Moderate,2 years (or capacity < 80%)
 6F4016-12,VALVE,"Part Number: 6F4016-12Description: DRAIN VALVE",fuel_systems,High,"5,000hrs (flow < 90% spec)"
 65-46288-12,"LINK, TORSION","Part Number: 65-46288-12Description: TORSION LINK AY UPPER",other,Unknown,On-condition
-3214-31,BATTERY PACK,"Part Number: 3214-31Description: BATTERY, EMERGENCY POWER SUPPLY",other,Unknown,On-condition
+3214-31,BATTERY PACK,"Part Number: 3214-31Description: BATTERY, EMERGENCY POWER SUPPLY",electrical_systems,High,2 years (or capacity < 80%)
 S5431301100100,COWL ASSY,"Part Number: S5431301100100Description: COWL ASSY",other,Unknown,On-condition
 1460M52P03,POSITION BALL NO 3,"Part Number: 1460M52P03Description: BEARING BALL THRUST NO.3",other,Unknown,On-condition
 822-0334-003,TRANSCEIVER,"Part Number: 822-0334-003Description: TRANSCEIVER-RADIO ALTIMETER",avionics,Moderate,2 years (or capacity < 80%)
@@ -222,7 +222,7 @@ KIT47145-27-20,ELSD KIT,"Part Number: KIT47145-27-20Description: ELSD KIT",oth
 FE205-000,RUDDER DAMPE,"Part Number: FE205-000Description: RUDDER DAMPER ASSEMBLY",other,Unknown,On-condition
 02-1036-0111,"JACK, MAIN WING","Part Number: 02-1036-0111Description: JACK: TRIPOD,HYD,10TON, 39X39X44IN,260LB",other,Unknown,On-condition
 A425400470-090,DOOR,"Part Number: A425400470-090Description: DOOR, MIRROR",other,Unknown,On-condition
-341F010000,THERMOSTAT,"Part Number: 341F010000Description: THERMOSTAT SOLENOID",other,Unknown,On-condition
+341F010000,THERMOSTAT,"Part Number: 341F010000Description: THERMOSTAT SOLENOID",air_conditioning,High,6 months (or ΔP > 4 inches H2O)
 ARG7041-1,NUT,"Part Number: ARG7041-1Description: NUT, SIDE BRACE MLG",other,Unknown,On-condition
 9005000-11203,T3CAS,"Part Number: 9005000-11203Description: T3CAS COMPUTER",other,Unknown,On-condition
 S2521956800000,COVER ASSY,"Part Number: S2521956800000Description: COVER ASSY",other,Unknown,On-condition
@@ -237,7 +237,7 @@ R815505-6,PROP BLADE,"Part Number: R815505-6Description: BLADE - PROPELLER",en
 756A0000-07,CONDENSER ASSY,"Part Number: 756A0000-07Description: CONDENSER-AIR CONDITIONING",other,Unknown,On-condition
 C20225510,CARBON BRAKE,"Part Number: C20225510Description: BRAKE ASSY-MLG",avionics,Moderate,2 years (or capacity < 80%)
 D2907024700400,MANIFOLD ASSY,"Part Number: D2907024700400Description: MANIFOLD ASSY",hydraulic_systems,High,"5,000hrs (efficiency < 80%)"
-1803B0000-04,CONTROLLER – AIR CON,"Part Number: 1803B0000-04Description: AIR CONDITIONING CONTROLLER",other,Unknown,On-condition
+1803B0000-04,CONTROLLER – AIR CON,"Part Number: 1803B0000-04Description: AIR CONDITIONING CONTROLLER",air_conditioning,High,6 months (or ΔP > 4 inches H2O)
 65-90305-67,FILTER,"Part Number: 65-90305-67Description: FILTER KIT",fuel_systems,High,"5,000hrs (flow < 90% spec)"
 320548-2,VALVE SOLENOID,"Part Number: 320548-2Description: VALVE, TEMP SOLENOID",fuel_systems,High,"5,000hrs (flow < 90% spec)"
 0871BN3-5,ICE DETECTOR,"Part Number: 0871BN3-5Description: ICE DETECTOR",other,Unknown,On-condition
@@ -263,7 +263,7 @@ NSA931432A4BA0A,SWITCH,"Part Number: NSA931432A4BA0ADescription: SWITCH",other
 MF10-05-11,MASK-FULL,"Part Number: MF10-05-11Description: MASK-FULL FACE QUICK DONNING",other,Unknown,On-condition
 85780333-107,TRACK UPPER,"Part Number: 85780333-107Description: TRACK, UPPER",avionics,Moderate,2 years (or capacity < 80%)
 20032-2,AC GENERATOR,"Part Number: 20032-2Description: AC GENERATOR",hydraulic_systems,High,"5,000hrs (efficiency < 80%)"
-397B030000,THERMOSTAT,"Part Number: 397B030000Description: THERMOSTAT SOLENOID",other,Unknown,On-condition
+397B030000,THERMOSTAT,"Part Number: 397B030000Description: THERMOSTAT SOLENOID",air_conditioning,High,6 months (or ΔP > 4 inches H2O)
 3088477-1-1,BOLT SHOULDER,"Part Number: 3088477-1-1Description: BOLT SHOULDER",other,Unknown,On-condition
 103-003-2,HALL SENSOR,"Part Number: 103-003-2Description: HALL EFFECT SENSOR",other,Unknown,On-condition
 F70199-1,TIRE GAUGE,"Part Number: F70199-1Description: TYRE PRESSURE INFLATOR",landing_gear,Extreme,200-300 landings (or tread depth < 2mm)
@@ -291,7 +291,7 @@ A805300-44,CARTRIDGE,"Part Number: A805300-44Description: CARTRIDGE, POWER DEV
 474358,SMOKE DET.,"Part Number: 474358Description: SMOKE DET.(95-97%) W/FAN ARJ21",other,Unknown,On-condition
 473597-4-07,SMOKE DETECTOR,"Part Number: 473597-4-07Description: SMOKE DETECTOR /DUAL/ (MOD-07)",other,Unknown,On-condition
 A805300-45,CARTRIDGE,"Part Number: A805300-45Description: CARTRIDGE",other,Unknown,On-condition
-446055,WIRE CONNECTOR,"Part Number: 446055Description: WIRE CONNECTOR, SOCKET RECEPTA",other,Unknown,On-condition
+446055,WIRE CONNECTOR,"Part Number: 446055Description: WIRE CONNECTOR, SOCKET RECEPTA",electrical_systems,High,15 years (or insulation < 50MΩ)
 473155,TESTER ASSY.4.3 FLAME DETECTOR,"Part Number: 473155Description: TESTER ASSY.4.3 FLAME DETECTOR",other,Unknown,On-condition
 473597-15,SMOKE DETECTOR,"Part Number: 473597-15Description: SMOKE DETECTOR (93%-96%)",other,Unknown,On-condition
 30-326T-1,CONTROL AMP ASSY 28 VDC,"Part Number: 30-326T-1Description: CONTROL AMP ASSY 28 VDC",other,Unknown,On-condition
@@ -314,7 +314,7 @@ EVR750-03-0100A,TRANSCEIVER VHF,"Part Number: EVR750-03-0100ADescription: ENHA
 822-1338-205,ATC TRANSPONDER,"Part Number: 822-1338-205Description: ATC TRANSPONDER",avionics,Moderate,2 years (or capacity < 80%)
 822-1287-101,TRANSCEIVER,"Part Number: 822-1287-101Description: VHF COMMUNICATIONS TRANSCEIVER",avionics,Moderate,2 years (or capacity < 80%)
 822-1821-332,MULTI MODE RECEIVER,"Part Number: 822-1821-332Description: ILS/GPS MULTI-MODE RECEIVER",other,Unknown,On-condition
-8061-888,MAIN ENGINE CONTROL,"Part Number: 8061-888Description: MAIN ENGINE CONTROL",engines,Extreme,On-condition (ultrasound every 500 cycles)
+8061-888,MAIN ENGINE CONTROL,"Part Number: 8061-888Description: MAIN ENGINE CONTROL",other,Unknown,On-condition
 GG436-4004-5,VALVE ISOLATION,"Part Number: GG436-4004-5Description: VALVE ASSY ISOLATIO",fuel_systems,High,"5,000hrs (flow < 90% spec)"
 GG436-2006-11,FLOW CONTROL VALVE,"Part Number: GG436-2006-11Description: FLOW CONTROL VALVE",fuel_systems,High,"5,000hrs (flow < 90% spec)"
 GP422-1102-1,VALVE ASSY,"Part Number: GP422-1102-1Description: VALVE, AFT TANK WATER",fuel_systems,High,"5,000hrs (flow < 90% spec)"
@@ -355,7 +355,7 @@ GD478-1104-9,TUBE ASSY,"Part Number: GD478-1104-9Description: TUBE ASSY, SUCTI
 2130161-101,OZONE CONVERTER,"Part Number: 2130161-101Description: CONVERTER - OZONE",other,Unknown,On-condition
 744041B,INTEGRATED DRIVE GENERATO,"Part Number: 744041BDescription: INTEGRATED DRIVE GENERATOR",hydraulic_systems,High,"5,000hrs (efficiency < 80%)"
 2LA003968-00,LIGHT ANTICOLLISION,"Part Number: 2LA003968-00Description: LIGHT-ANTICOLLISION,BEACON",other,Unknown,On-condition
-342B040000,THERMOSTAT CONTROL,"Part Number: 342B040000Description: TEMPERATURE CONTROL THERMOSTAT",other,Unknown,On-condition
+342B040000,THERMOSTAT CONTROL,"Part Number: 342B040000Description: TEMPERATURE CONTROL THERMOSTAT",air_conditioning,High,6 months (or ΔP > 4 inches H2O)
 65-73762-21,NLG ASSY,"Part Number: 65-73762-21Description: NOSE LANDING GEAR ASSY",landing_gear,Extreme,200-300 landings (or tread depth < 2mm)
 65C37849-34,TOPKITRE,"Part Number: 65C37849-34Description: TOP KIT - ICE & RAIN",other,Unknown,On-condition
 2041446-0401,ANTENNA-WEATHER RADAR,"Part Number: 2041446-0401Description: ANTENNA-WEATHER RADAR",avionics,Moderate,2 years (or capacity < 80%)
@@ -370,7 +370,7 @@ GM127-1562-3,SPACER,"Part Number: GM127-1562-3Description: SPACER",other,Unkno
 DT-A4BA-12,SPEAKER,"Part Number: DT-A4BA-12Description: SPEAKER ASSY",other,Unknown,On-condition
 GM127-1852-1,SPACER,"Part Number: GM127-1852-1Description: SPACER",other,Unknown,On-condition
 GM134-1501-2,PANEL ASSY,"Part Number: GM134-1501-2Description: PANEL ASSY",interior_components,Low,On-condition
-CF34-10E6,ENGINE,"Part Number: CF34-10E6Description: ENGINE",engines,Extreme,On-condition (ultrasound every 500 cycles)
+CF34-10E6,ENGINE,"Part Number: CF34-10E6Description: ENGINE",other,Unknown,On-condition
 017766-01,SENSOR ASSY WATER,"Part Number: 017766-01Description: SENSOR, WATER LEVEL",other,Unknown,On-condition
 GM124-1402-3,SKIN ASSY,"Part Number: GM124-1402-3Description: SKIN ASSY PANEL LH",other,Unknown,On-condition
 GE534-0001-1,"BOX, AUTO SHUT-OFF","Part Number: GE534-0001-1Description: AUTO SHUT-OFF BOX",other,Unknown,On-condition
@@ -395,7 +395,7 @@ AL-2502,DIMMING INTERFACE,"Part Number: AL-2502Description: DIMMING INTERFACE"
 622-8124-001,MOUNT ASSY,"Part Number: 622-8124-001Description: MOUNT, DUAL COUPLER SHOCK ISO LOW",other,Unknown,On-condition
 3701B1-1,MONITOR ASSY,"Part Number: 3701B1-1Description: MONITOR ASSY HEATER",other,Unknown,On-condition
 MF10-08-01,OXYGEN MASK,"Part Number: MF10-08-01Description: OXYGEN MASK, CREW",interior_components,Low,On-condition
-990-6813-001,"MODULE, CONTROLLER","Part Number: 990-6813-001Description: MODULE, CONTROLLER",other,Unknown,On-condition
+990-6813-001,"MODULE, CONTROLLER","Part Number: 990-6813-001Description: MODULE, CONTROLLER",air_conditioning,High,6 months (or ΔP > 4 inches H2O)
 980-6117-001,MICROPHONE,"Part Number: 980-6117-001Description: MICROPHONE MONITOR SYSTEM",other,Unknown,On-condition
 770011,WATER FILTER,"Part Number: 770011Description: WATER MICROFILTRATION UNIT",fuel_systems,High,"5,000hrs (flow < 90% spec)"
 8ES005045-00,POWER SUPPLY UNIT ANTICOL,"Part Number: 8ES005045-00Description: PSU-POWER SUPPLY UNIT,BEACON",other,Unknown,On-condition
@@ -403,7 +403,7 @@ MF10-08-01,OXYGEN MASK,"Part Number: MF10-08-01Description: OXYGEN MASK, CREW"
 321-400-603-0,SWITCH,"Part Number: 321-400-603-0Description: SWITCH, PIVOT DEPLOY",other,Unknown,On-condition
 60-4983-3,POWER SUPPLY,"Part Number: 60-4983-3Description: POWER SUPPLY, STROBE LIGHT",other,Unknown,On-condition
 TL10101-104,LATCH,"Part Number: TL10101-104Description: LATCH",other,Unknown,On-condition
-1151968-1,CONTACTOR,"Part Number: 1151968-1Description: CONTACTOR, 290 AMP LATCHING",other,Unknown,On-condition
+1151968-1,CONTACTOR,"Part Number: 1151968-1Description: CONTACTOR, 290 AMP LATCHING",electrical_systems,High,2 years (or capacity < 80%)
 2061-15-1,POSITION INDICATOR,"Part Number: 2061-15-1Description: FLAP POSITION INDICATOR",other,Unknown,On-condition
 AE0607F00,FAN,"Part Number: AE0607F00Description: FAN ARINC",other,Unknown,On-condition
 822-1338-003,ATC TRANSPONDER,"Part Number: 822-1338-003Description: TRANSPONDER ATC/MODE S",avionics,Moderate,2 years (or capacity < 80%)
@@ -420,7 +420,7 @@ RD-AX7360-02,AUDIO REPRODUCER,"Part Number: RD-AX7360-02Description: PRERECORD
 3291766-2,VALVE-NGS,"Part Number: 3291766-2Description: VALVE, SHUTOFF, NGS",fuel_systems,High,"5,000hrs (flow < 90% spec)"
 8396-5,HORIZONTAL STABILIZER TRIM ACTUATOR,"Part Number: 8396-5Description: HSTA, ACTUATOR, HORIZONTAL STABILIZER TRIM",flight_controls,Extreme,"5,000hrs (leak > 3 drops/hr)"
 113T4100-402G,SPOILER,"Part Number: 113T4100-402GDescription: SPOILER, INBOARD, RH, NO. 7 AND 8",other,Unknown,On-condition
-2520,BATTERY,"Part Number: 2520Description: BATTERY",other,Unknown,On-condition
+2520,BATTERY,"Part Number: 2520Description: BATTERY",electrical_systems,High,2 years (or capacity < 80%)
 C12351AA,ANTENNA,"Part Number: C12351AADescription: ANTENNA-ADF",other,Unknown,On-condition
 267SV,AIR CHILLER,"Part Number: 267SVDescription: REFRIGERATION UNIT-AIR CHILLER",other,Unknown,On-condition
 622-5136-202,ANTENNA PEDESTAL MOUNT,"Part Number: 622-5136-202Description: MOUNT-WEATHER RADAR ANTENNA DRIVE UNIT",avionics,Moderate,2 years (or capacity < 80%)
@@ -433,7 +433,7 @@ ADTS405F,AIR DATA TEST SET,"Part Number: ADTS405FDescription: AIR DATA TEST SY
 822-0314-303,SATELLITE DATA UNIT,"Part Number: 822-0314-303Description: SDU-SATELLITE DATA UNIT",other,Unknown,On-condition
 376046-103,LINK ASSEMBLY,"Part Number: 376046-103Description: LINK ASSEMBLY",other,Unknown,On-condition
 2LA005163-25,LIGHT ASSY MAP,"Part Number: 2LA005163-25Description: LIGHT ASSY MAP",other,Unknown,On-condition
-8ES360000-00,BATTERY PACK,"Part Number: 8ES360000-00Description: BATTERY PACK",other,Unknown,On-condition
+8ES360000-00,BATTERY PACK,"Part Number: 8ES360000-00Description: BATTERY PACK",electrical_systems,High,2 years (or capacity < 80%)
 GM428-4034-1,LINE ASSY FUEL,"Part Number: GM428-4034-1Description: LINE ASSY FUEL",fuel_systems,High,"5,000hrs (flow < 90% spec)"
 2LA006615-22,LIGHT ASSY NAVIGATI,"Part Number: 2LA006615-22Description: LIGHT, RED, NAVIGATION, WING",other,Unknown,On-condition
 2LA007742-22,LIGHT ASSY,"Part Number: 2LA007742-22Description: LIGHT,REFERENCE EYE",other,Unknown,On-condition
@@ -446,11 +446,11 @@ AE712890-1,HYDRO HOSE,"Part Number: AE712890-1Description: HOSE, FLEX, HYDRAUL
 724866-805BK,HANDSET,"Part Number: 724866-805BKDescription: HANDSET, COCKPIT",other,Unknown,On-condition
 GM148-1003-2,FLAP ASSY,"Part Number: GM148-1003-2Description: FLAP ASSY OUTBD RH",other,Unknown,On-condition
 MXP210-00,SMOKE GOGGLES,"Part Number: MXP210-00Description: SMOKE GOGGLES",other,Unknown,On-condition
-BR700-710A2-20,ENGINE,"Part Number: BR700-710A2-20Description: SWITCH PRESSURE ENGINE",engines,Extreme,On-condition (ultrasound every 500 cycles)
-PW4060-1,ENGINE,"Part Number: PW4060-1Description: ENGINE",engines,Extreme,On-condition (ultrasound every 500 cycles)
+BR700-710A2-20,ENGINE,"Part Number: BR700-710A2-20Description: SWITCH PRESSURE ENGINE",other,Unknown,On-condition
+PW4060-1,ENGINE,"Part Number: PW4060-1Description: ENGINE",other,Unknown,On-condition
 3050000-5,FIRE EXTINGUIHER,"Part Number: 3050000-5Description: FIRE EXTINGUIHER",other,Unknown,On-condition
 3017600,POWER SECTION,"Part Number: 3017600Description: POWER SECTION",flight_controls,Extreme,"5,000hrs (leak > 3 drops/hr)"
-3070800-74,CONTROL FUEL ASSY MAIN TURBINE ENGINE,"Part Number: 3070800-74Description: CONTROL FUEL ASSY MAIN TURBINE ENGINE",engines,Extreme,"2,000hrs (flow checks every 500hrs)"
+3070800-74,CONTROL FUEL ASSY MAIN TURBINE ENGINE,"Part Number: 3070800-74Description: CONTROL FUEL ASSY MAIN TURBINE ENGINE",pneumatic_systems,High,"6,000hrs (vibration monitoring)"
 2080M35G11,NOZZLE,"Part Number: 2080M35G11Description: H.P.T. NOZZLE SEGMEN",engines,Extreme,On-condition (ultrasound every 500 cycles)
 2119584-4,"CONTROL UNIT, APU","Part Number: 2119584-4Description: ELECTRONIC CONTROL UNIT",other,Unknown,On-condition
 1152426-245,APU START CONVERTER,"Part Number: 1152426-245Description: APU STARTER CONTROL UNIT",other,Unknown,On-condition
@@ -475,7 +475,7 @@ BA03604,GENERATOR,"Part Number: BA03604Description: GENERATOR-APU",hydraulic_s
 90002317-2WTA,WHEEL MAIN,"Part Number: 90002317-2WTADescription: EJET WHEEL WITH RUBBER",landing_gear,Extreme,200-300 landings (or tread depth < 2mm)
 S5307300001400,TAIL CONE ASSY,"Part Number: S5307300001400Description: TAIL CONE ASSY",other,Unknown,On-condition
 58311-007,CARTRIDGE,"Part Number: 58311-007Description: CARTRIDGE (KIDDE-GRAVINER)",other,Unknown,On-condition
-58341-001,FUSE,"Part Number: 58341-001Description: FUSE (KIDDE-GRAVINER)",other,Unknown,On-condition
+58341-001,FUSE,"Part Number: 58341-001Description: FUSE (KIDDE-GRAVINER)",electrical_systems,High,2 years (or capacity < 80%)
 48553-121,PRESSURE RELIEF PLUG ASSY (KG),"Part Number: 48553-121Description: PRESSURE RELIEF PLUG ASSY (KG)",other,Unknown,On-condition
 51653-274,FIREWIRE CONTROL UNIT,"Part Number: 51653-274Description: FIREWIRE CONTROL UNIT (KG)",other,Unknown,On-condition
 472420-2,FIRE EXTINGUISHER,,other,Unknown,On-condition
@@ -484,7 +484,7 @@ S5307300001400,TAIL CONE ASSY,"Part Number: S5307300001400Description: TAIL CO
 476288,EXTINGUISHER 5,"Part Number: 476288Description: EXTINGUISHER 5 B:C HALOTRON BrX",other,Unknown,On-condition
 G825100-3,"FIREX, DISPOSABLE","Part Number: G825100-3Description: FIREX, DISPOSABLE (POTTY)",other,Unknown,On-condition
 878562-2,"CARTRIDGE, DEVICE","Part Number: 878562-2Description: CARTRIDGE, DEVICE (SMALL CUP)",other,Unknown,On-condition
-878238-02,"FIRE DET, PLUG CONNECTOR","Part Number: 878238-02Description: FIRE DET, PLUG CONNECTOR",other,Unknown,On-condition
+878238-02,"FIRE DET, PLUG CONNECTOR","Part Number: 878238-02Description: FIRE DET, PLUG CONNECTOR",electrical_systems,High,2 years (or capacity < 80%)
 10-1096-02,DETECTOR / 5’LG,"Part Number: 10-1096-02Description: DETECTOR / 5'LG / (APD) MODEL 101",other,Unknown,On-condition
 10-1099-01,DETECTOR /10’LG,"Part Number: 10-1099-01Description: DETECTOR /10'LG/(APD)MODEL 101",other,Unknown,On-condition
 10-1098-01,DETECTOR /28’LG,"Part Number: 10-1098-01Description: DETECTOR /28'LG/(APD)MODEL 101",other,Unknown,On-condition
@@ -498,4 +498,4 @@ G825100-3,"FIREX, DISPOSABLE","Part Number: G825100-3Description: FIREX, DISPO
 G825100-4,FIREX,"Part Number: G825100-4Description: FIREX, DISPOSABLE (POTTY)",other,Unknown,On-condition
 475089-1,FIREX 224 CU,"Part Number: 475089-1Description: FIREX 224 CU IN DUAL OUTLET",other,Unknown,On-condition
 474158-3,FIREX,"Part Number: 474158-3Description: FIREX DUAL OUTLET 1400 CU IN",other,Unknown,On-condition
-PT6A-114A,ENGINE NEW 675 HP,,engines,Extreme,On-condition (ultrasound every 500 cycles)
+PT6A-114A,ENGINE NEW 675 HP,,other,Unknown,On-condition

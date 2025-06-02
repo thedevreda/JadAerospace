@@ -1,0 +1,31 @@
+Your Parts Analysis:
+
+Flight Controls (leak-prone parts) - Critical safety items
+Avionics Transducers - High-tech components with 2-year replacement cycles
+Landing Gear (nose tires) - High-wear consumables with 200-300 landing cycles
+Fuel System Gaskets - Long-term maintenance items (10-year cycles)
+
+Target Strategy by Aircraft Type:
+Boeing Operators (since you work with Boeing):
+
+737 Fleet Operators: Southwest, Ryanair, American Airlines - high utilization means frequent tire/gasket replacements
+777/787 Operators: Emirates, Qatar Airways, United - need sophisticated avionics components
+Cargo Airlines: FedEx, UPS - heavy landing gear wear from frequent operations
+
+Bombardier Focus:
+
+Regional Airlines: SkyWest, Republic Airways, Jazz Aviation
+Business Aviation: NetJets, Flexjet for CRJ series parts
+
+MRO Targets by Specialization:
+
+Heavy Maintenance: Lufthansa Technik, Air France Industries, Singapore Technologies
+Component Repair: AAR Corp, StandardAero (for your avionics transducers)
+Landing Gear Specialists: Safran Landing Systems service centers
+Quick-turn MROs: Timco, ST Aerospace (for consumables like tires)
+
+Geographic Targeting:
+
+High-frequency routes (Europe-Middle East, US domestic) = more tire replacements
+Harsh environments (desert, coastal) = more fuel system seal degradation
+Older fleets = more avionics upgrades needed
