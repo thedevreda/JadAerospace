@@ -1,0 +1,50 @@
+nvoice Ninja allows you to export reports as CSV files with customizable columns ReadthedocsInvoiceninja, including:
+
+Client data and payment histories
+Invoice and payment reports
+Expense tracking data
+Project and time tracking data
+Product/service performance data
+
+How to Use This Data to Improve Sales:
+1. Customer Analysis & Segmentation
+python# Analyze your exported client data
+import pandas as pd
+
+# Load exported data
+clients_df = pd.read_csv('invoice_ninja_clients.csv')
+invoices_df = pd.read_csv('invoice_ninja_invoices.csv')
+
+# Customer lifetime value analysis
+customer_value = invoices_df.groupby('client_id').agg({
+    'amount': ['sum', 'mean', 'count'],
+    'date': ['min', 'max']
+}).round(2)
+
+# Identify high-value customers
+top_customers = customer_value.sort_values(('amount', 'sum'), ascending=False).head(20)
+2. Sales Performance Tracking
+python# Monthly sales trends
+invoices_df['date'] = pd.to_datetime(invoices_df['date'])
+monthly_sales = invoices_df.groupby(invoices_df['date'].dt.to_period('M'))['amount'].sum()
+
+# Product/service performance
+product_performance = invoices_df.groupby('product_name').agg({
+    'amount': ['sum', 'count'],
+    'client_id': 'nunique'  # Number of unique customers
+})
+3. Payment Pattern Analysis
+python# Payment timing analysis
+payments_df = pd.read_csv('invoice_ninja_payments.csv')
+invoices_df['days_to_pay'] = (pd.to_datetime(payments_df['date']) - 
+                             pd.to_datetime(invoices_df['date'])).dt.days
+
+# Identify slow-paying customers
+slow_payers = invoices_df[invoices_df['days_to_pay'] > 30]['client_id'].value_counts()
+4. Revenue Forecasting
+python# Seasonal trends
+invoices_df['month'] = invoices_df['date'].dt.month
+seasonal_trends = invoices_df.groupby('month')['amount'].mean()
+
+# Growth rate calculation
+monthly_growth = monthly_sales.pct_change() * 100

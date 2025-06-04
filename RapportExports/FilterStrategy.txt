@@ -1,0 +1,36 @@
+Client Type 1: Regional Airlines (Risk-Averse, Cost-Conscious)
+Filter Criteria:
+
+Risk Level: 'Low', 'Moderate'
+Replacement Interval: Longer intervals like '10 years', '15 years', '7 years'
+Geo Targets: 'High-frequency routes (US domestic, Europe-Middle East)'
+Boeing/Bombardier Targets: Focus on common regional aircraft
+
+Why this works: Regional airlines operate shorter routes with frequent cycles but need reliable, cost-effective parts with predictable maintenance schedules.
+Client Type 2: Cargo Airlines (Performance-Focused)
+Filter Criteria:
+
+Risk Level: 'High', 'Extreme' (willing to pay for performance)
+Replacement Interval: '5,000hrs' intervals, 'On-condition' monitoring
+Geo Targets: 'Harsh environments (desert, coastal) + long-haul operations', 'Hot climates + cargo temperature-sensitive operations'
+MRO Targets: Heavy maintenance specialists
+
+Why this works: Cargo operations run 24/7 in harsh conditions and need high-performance parts even if they require more frequent monitoring.
+Client Type 3: MRO Service Providers
+Filter Criteria:
+
+Risk Level: All levels (they service diverse fleets)
+Replacement Interval: Focus on frequently replaced items like '6 months', '2,000hrs', '500 cycles'
+Geo Targets: 'Safety-critical universal demand + harsh environments'
+MRO Targets: Primary focus
+
+Why this works: MRO providers need a broad inventory of consumable parts that turn over quickly and serve multiple aircraft types.
+Client Type 4: Legacy Fleet Operators
+Filter Criteria:
+
+Risk Level: 'Moderate', 'High'
+Replacement Interval: 'On-condition' with monitoring
+Geo Targets: 'Older fleets needing upgrades + EM interference environments'
+Boeing Targets: Older Boeing models
+
+Why this works: Operators of aging aircraft need specialized parts and are willing to invest in condition-based monitoring to extend aircraft life.

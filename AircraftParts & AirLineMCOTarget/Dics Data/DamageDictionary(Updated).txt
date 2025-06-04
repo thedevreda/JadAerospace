@@ -1,0 +1,783 @@
+# ====================== COMPREHENSIVE AIRCRAFT SYSTEMS FOR CLIENT SEGMENTATION ======================
+aircraft_systems = {
+    # ====================== CRITICAL SYSTEMS (Extreme Risk) ======================
+    "landing_gear": {
+        "keywords": [
+            "undercarriage", "landing gear", "gear collapse", "gear-up landing", "tire failure", 
+            "brake failure", "strut failure", "retraction failure", "oleo failure", "wheel assembly",
+            "shimmy", "axle crack", "drag brace", "uplock failure", "downlock sensor", "gear doors",
+            "WOW sensor", "proximity sensor", "gear warning", "tire pressure", "anti-skid"
+        ],
+        "common_parts": [
+            "MLG", "NLG", "STRUT", "ACTUATOR-GEAR", "SHOCK-ABSORB", "BRAKE-ASSY", "WHEEL", 
+            "TIRE", "HYDRAULIC-CYL", "TORQUE-LINK", "AXLE", "BEARING", "SHIMMY DAMPER", 
+            "UPLOCK", "DOWNLOCK", "TRUCK BEAM", "SCISSOR LINK", "GEAR DOOR", "WOW SWITCH",
+            "PROXIMITY SENSOR", "BRAKE VALVE", "ANTI-SKID VALVE", "TIRE PRESSURE SENSOR"
+        ],
+        "failure_modes": [
+            "Structural collapse", "Hydraulic leakage", "Bearing seizure", "Tire blowout", 
+            "Brake overheating", "Shimmy vibration", "Corrosion", "Fatigue cracking",
+            "Door jam", "Sensor malfunction", "Anti-skid failure"
+        ],
+        "risk_level": "Extreme",
+        "replacement_interval": {
+            "Tires": "200-300 landings (or tread depth < 2mm)",
+            "Brakes": "500-1000 landings (or wear sensors trigger)",
+            "Shock Struts": "5-10 years (nitrogen pressure checks every 500hrs)",
+            "Actuators": "10,000 cycles/15 years (whichever first)",
+            "Bearings": "5,000hrs (or grease contamination)",
+            "WOW Switches": "5 years (or intermittent faults)",
+            "Gear Doors": "15,000 cycles (or structural cracks)"
+        },
+        "geo_targets": [
+            "High-frequency routes (US domestic, Europe-Middle East)",
+            "Harsh environments (desert, coastal) + long-haul operations",
+            "High-cycle operations + harsh environments"
+        ],
+        "boeing_targets": ["B737", "B777", "B787", "B747", "B767"],
+        "bombardier_targets": ["CRJ", "DHC-8", "Global"],
+        "mro_targets": ["Heavy maintenance", "Line maintenance", "Component overhaul"]
+    },
+    
+    "engines": {
+        "keywords": [
+            "engine failure", "powerloss", "blade separation", "fuel starvation", "uncontained failure", 
+            "compressor stall", "turbine damage", "FOD damage", "oil contamination", "fuel pump failure",
+            "EGT exceedance", "vibration", "HPT crack", "LPT blade", "seal leak", "thrust reverser",
+            "nacelle damage", "starter failure", "ignition fault", "bleed valve", "FADEC fault"
+        ],
+        "common_parts": [
+            "HPT", "LPT", "HPC", "LPC", "COMBUSTOR", "NOZZLE", "FUEL PUMP", "OIL PUMP", "IGNITER", 
+            "VANE", "BLADE", "SEAL", "BEARING", "ENGINE MOUNT", "NACELLE", "VBV", "HMU", "FADEC",
+            "STARTER", "REVERSER", "COWLING", "FIREWALL", "FUEL MANIFOLD", "OIL FILTER"
+        ],
+        "failure_modes": [
+            "Metal fatigue", "FOD", "Hot corrosion", "Oil starvation", "Combustion instability", 
+            "Vibration-induced cracking", "Buffer air loss", "Bleed valve stuck", "Starter hang",
+            "Reverser malfunction", "FADEC power loss"
+        ],
+        "risk_level": "Extreme",
+        "replacement_interval": {
+            "Fan Blades": "On-condition (ultrasound every 500 cycles)",
+            "HPT Blades": "5,000hrs (or TBC spallation)",
+            "Bearings": "10,000hrs (or vibration > 4.0 IPS)",
+            "Fuel Nozzles": "2,000hrs (flow checks every 500hrs)",
+            "Seals": "3-5 years (leak > 5cc/min)",
+            "Oil Filters": "300hrs (or bypass indication)",
+            "Igniters": "2,000hrs (or misfire events)",
+            "FADEC": "On-condition (BIT failures)"
+        },
+        "geo_targets": [
+            "Harsh environments (desert, coastal) + long-haul operations",
+            "High-altitude routes + extreme temperature operations",
+            "Safety-critical universal demand + harsh environments"
+        ],
+        "boeing_targets": ["CFM56", "GE90", "Trent", "PW4000", "LEAP"],
+        "bombardier_targets": ["PW100", "CF34", "BR700"],
+        "mro_targets": ["Engine overhaul", "Hot section repair", "Component exchange"]
+    },
+    
+    "flight_controls": {
+        "keywords": [
+            "aileron jam", "elevator failure", "rudder hardover", "flap asymmetry", "trim runaway", 
+            "actuator fault", "control cable snap", "servo valve blockage", "hinge corrosion",
+            "FCC fault", "FBW failure", "gust lock", "pushrod fracture", "tab disconnect",
+            "spoiler malfunction", "slat failure", "control surface flutter", "artificial feel"
+        ],
+        "common_parts": [
+            "ACTUATOR", "SERVO", "CABLE", "PUSHROD", "BELLCRANK", "FLAP TRACK", "TAB", "HINGE", 
+            "TORQUE TUBE", "JACKSCREW", "FCC", "ELAC", "SEC", "FAC", "AP SERVO", "YAW DAMPER",
+            "SPOILER ACT", "SLAT TRACK", "ARTIFICIAL FEEL", "TRIM MOTOR", "GUST LOCK"
+        ],
+        "failure_modes": [
+            "Jamming (FOD/seizure)", "Freeplay (wear)", "Hydraulic leak", "Electrical fault", 
+            "Corrosion", "Software glitch", "Runaway (trim)", "Feedback failure",
+            "Control surface flutter", "Actuator drift", "Cable stretch"
+        ],
+        "risk_level": "Extreme",
+        "replacement_interval": {
+            "Hydraulic Actuators": "5,000hrs (leak > 3 drops/hr)",
+            "Control Cables": "15 years (or 2% stretch)",
+            "Rod Ends": "5 years (play > 0.8mm)",
+            "FBW Computers": "On-condition (BIT failures)",
+            "Flap Tracks": "20,000 cycles (MPI inspections)",
+            "Trim Motors": "10,000hrs (or current spikes)",
+            "Artificial Feel": "15 years (calibration checks)"
+        },
+        "geo_targets": [
+            "High-frequency routes (US domestic, Europe-Middle East)",
+            "High-cycle operations + harsh environments",
+            "Safety-critical universal demand + harsh environments"
+        ],
+        "boeing_targets": ["B737 FCC", "B777 PFCS", "B787 FBW"],
+        "bombardier_targets": ["CRJ FCS", "Global FBW"],
+        "mro_targets": ["Flight control rigging", "Actuator overhaul", "Computer repair"]
+    },
+
+    # ====================== ESSENTIAL SYSTEMS (High Risk) ======================
+    "fuel_systems": {
+        "keywords": [
+            "fuel leak", "fuel contamination", "fuel pump", "fuel valve", "fuel filter", 
+            "fuel tank", "fuel line", "fuel icing", "water ingress", "vapor lock",
+            "crossfeed fault", "quantity error", "fuel heater", "scavenge pump", "jettison",
+            "fuel imbalance", "boost pump", "transfer pump", "fuel management"
+        ],
+        "common_parts": [
+            "PUMP", "VALVE", "FILTER", "TANK", "LINE", "COUPLING", "VENT", "PROBE", "GAUGE", 
+            "SEAL", "O-RING", "HEATER", "SCAVENGE", "JETTISON", "FQIS", "DUMP VALVE",
+            "BOOST PUMP", "TRANSFER PUMP", "CROSSFEED VALVE", "SHUTOFF VALVE", "FUEL CONTROLLER"
+        ],
+        "failure_modes": [
+            "Seal degradation", "Microbial growth", "Vapor lock", "Electrical arcing", 
+            "Pressure fluctuation", "Ice blockage", "Tank corrosion", "Pump cavitation",
+            "Valve seizure", "Probe fouling", "Controller malfunction"
+        ],
+        "risk_level": "High",
+        "replacement_interval": {
+            "Fuel Pumps": "5,000hrs (flow < 90% spec)",
+            "Filters": "500hrs (or ΔP > 15psi)",
+            "Probes": "5 years (calibration drift)",
+            "Tank Seals": "10 years (or weeping)",
+            "Boost Pumps": "8,000hrs (pressure checks)",
+            "Fuel Valves": "15,000 cycles (leakage test)",
+            "Fuel Lines": "20 years (pressure test)"
+        },
+        "geo_targets": [
+            "Hot climates + cargo temperature-sensitive operations",
+            "High-altitude routes + extreme temperature operations",
+            "Long-haul operations"
+        ],
+        "boeing_targets": ["B737 fuel system", "B777 fuel management", "B787 fuel"],
+        "bombardier_targets": ["CRJ fuel", "Global fuel"],
+        "mro_targets": ["Fuel system maintenance", "Tank entry", "Pump overhaul"]
+    },
+    
+    "hydraulic_systems": {
+        "keywords": [
+            "hydraulic leak", "low pressure", "pump failure", "valve stuck", "actuator drift", 
+            "reservoir low", "fluid contamination", "accumulator", "heat exchanger", "filter clog",
+            "priority valve", "shuttle valve", "relief valve", "PTU failure", "RAT deployment"
+        ],
+        "common_parts": [
+            "PUMP", "VALVE", "ACCUMULATOR", "CYLINDER", "FILTER", "RESERVOIR", "HEAT EXCHANGER", 
+            "MANIFOLD", "HOSE", "SEAL", "RELIEF VALVE", "PTU", "RAT", "PRIORITY VALVE",
+            "SHUTTLE VALVE", "ISOLATION VALVE", "BRAKE VALVE", "GEAR VALVE"
+        ],
+        "failure_modes": [
+            "Seal failure", "Fluid aeration", "Cavitation", "Contamination", 
+            "Thermal degradation", "Hose delamination", "Pump wear", "Valve sticking",
+            "Accumulator precharge loss", "Filter bypass"
+        ],
+        "risk_level": "High",
+        "replacement_interval": {
+            "Pumps": "5,000hrs (efficiency < 80%)",
+            "Hoses": "5 years (or outer cracking)",
+            "Accumulators": "10 years (precharge checks)",
+            "Filters": "1,000hrs (or ΔP > 50psi)",
+            "Reservoirs": "15 years (internal inspection)",
+            "Heat Exchangers": "8,000hrs (effectiveness test)",
+            "PTU": "10,000hrs (flow test)"
+        },
+        "geo_targets": [
+            "High-frequency routes (US domestic, Europe-Middle East)",
+            "High-cycle operations + temperature extremes",
+            "Harsh environments (desert, coastal) + long-haul operations"
+        ],
+        "boeing_targets": ["B737 hydraulics", "B777 hydraulics", "B787 hydraulics"],
+        "bombardier_targets": ["CRJ hydraulics", "Global hydraulics"],
+        "mro_targets": ["Hydraulic component overhaul", "System flushing", "Actuator repair"]
+    },
+
+    "electrical_systems": {
+        "keywords": [
+            "generator failure", "battery discharge", "bus tie fault", "inverter failure", "short circuit",
+            "ground fault", "voltage fluctuation", "frequency drift", "power distribution", "circuit breaker trip",
+            "wiring harness", "connector corrosion", "APU generator", "RAT deployment", "emergency power",
+            "TRU failure", "static inverter", "battery overtemp", "ground power", "external power"
+        ],
+        "common_parts": [
+            "GENERATOR", "BATTERY", "INVERTER", "TRANSFORMER", "BUS BAR", "RELAY", "CONTACTOR", 
+            "CIRCUIT BREAKER", "WIRE HARNESS", "CONNECTOR", "FUSE", "GCU", "BCU", "RAT", "APU GEN",
+            "TRU", "STATIC INVERTER", "POWER PANEL", "GALLEY POWER", "GPU RECEPTACLE"
+        ],
+        "failure_modes": [
+            "Insulation breakdown", "Connector oxidation", "Carbon brush wear", "Diode failure",
+            "Capacitor degradation", "Wire chafing", "Overvoltage damage", "Arcing",
+            "Battery cell failure", "Generator bearing failure", "TRU overheating"
+        ],
+        "risk_level": "High",
+        "replacement_interval": {
+            "Batteries": "2 years (or capacity < 80%)",
+            "Generators": "8,000hrs (brush inspection every 2,000hrs)",
+            "Wire Harnesses": "15 years (or insulation < 50MΩ)",
+            "Circuit Breakers": "10 years (or 10,000 operations)",
+            "Connectors": "On-condition (resistance > 5mΩ)",
+            "TRUs": "10,000hrs (efficiency test)",
+            "Static Inverters": "15 years (harmonic analysis)"
+        },
+        "geo_targets": [
+            "Older fleets needing upgrades + EM interference environments",
+            "Harsh electrical environments + older aircraft",
+            "High-passenger-turnover routes + wear-intensive operations"
+        ],
+        "boeing_targets": ["B737 electrical", "B777 electrical", "B787 electrical"],
+        "bombardier_targets": ["CRJ electrical", "Global electrical"],
+        "mro_targets": ["Electrical component repair", "Wire harness replacement", "Power system test"]
+    },
+
+    "pneumatic_systems": {
+        "keywords": [
+            "bleed air failure", "pack fault", "pressure regulator", "check valve", "precooler",
+            "wing anti-ice", "engine anti-ice", "cabin pressure", "outflow valve", "safety valve",
+            "air cycle machine", "turbine failure", "compressor surge", "duct overheat",
+            "pressure controller", "flow control valve", "isolation valve", "crossbleed"
+        ],
+        "common_parts": [
+            "BLEED VALVE", "PACK", "ACM", "PRECOOLER", "CHECK VALVE", "REGULATOR", "DUCT", 
+            "OUTFLOW VALVE", "SAFETY VALVE", "TURBINE", "COMPRESSOR", "HEAT EXCHANGER", "FILTER",
+            "ISOLATION VALVE", "CROSSBLEED VALVE", "PRESSURE CONTROLLER", "FLOW VALVE"
+        ],
+        "failure_modes": [
+            "Valve seizure", "Turbine blade damage", "Duct leak", "Pressure regulation failure",
+            "Heat exchanger fouling", "Filter clogging", "Bearing failure", "Seal degradation",
+            "Controller malfunction", "Crossbleed leak", "Overpressure relief"
+        ],
+        "risk_level": "High",
+        "replacement_interval": {
+            "ACM Turbines": "6,000hrs (vibration monitoring)",
+            "Bleed Valves": "5,000hrs (leak > 2% flow)",
+            "Outflow Valves": "10,000 cycles (or 5 years)",
+            "Regulators": "5 years (accuracy ±2%)",
+            "Filters": "1,000hrs (or ΔP > 3psi)",
+            "Heat Exchangers": "8,000hrs (effectiveness test)",
+            "Pressure Controllers": "10 years (calibration)"
+        },
+        "geo_targets": [
+            "High-altitude routes + extreme temperature operations",
+            "Harsh environments (desert, coastal) + long-haul operations",
+            "High-cycle operations + temperature extremes"
+        ],
+        "boeing_targets": ["B737 pneumatic", "B777 pneumatic", "B787 no-bleed"],
+        "bombardier_targets": ["CRJ pneumatic", "Global pneumatic"],
+        "mro_targets": ["Pneumatic system test", "ACM overhaul", "Valve repair"]
+    },
+
+    "air_conditioning": {
+        "keywords": [
+            "cabin temperature", "pack temperature", "mixing valve", "trim air valve", "zone control",
+            "recirculation fan", "HEPA filter", "temperature sensor", "flow control valve", "duct temperature",
+            "cargo heating", "equipment cooling", "avionics cooling", "galley ventilation",
+            "humidity control", "air distribution", "temperature control", "zone damper"
+        ],
+        "common_parts": [
+            "PACK", "MIXING VALVE", "TRIM AIR VALVE", "RECIR FAN", "HEPA FILTER", "TEMP SENSOR", 
+            "FLOW VALVE", "DUCT", "DIFFUSER", "DAMPER", "CONTROLLER", "ACTUATOR", "THERMOSTAT",
+            "HUMIDITY SENSOR", "AIR DISTRIBUTION UNIT", "ZONE DAMPER", "CARGO HEATER"
+        ],
+        "failure_modes": [
+            "Valve actuator failure", "Temperature sensor drift", "Fan motor failure", "Filter clogging",
+            "Duct blockage", "Control logic fault", "Mixing valve jam", "Thermal runaway",
+            "Humidity sensor failure", "Damper seizure", "Heater element failure"
+        ],
+        "risk_level": "High",
+        "replacement_interval": {
+            "HEPA Filters": "6 months (or ΔP > 4 inches H2O)",
+            "Recirculation Fans": "15,000hrs (vibration > 0.5 IPS)",
+            "Temperature Sensors": "5 years (drift > ±3°C)",
+            "Mixing Valves": "10,000 cycles (leakage > 5%)",
+            "Pack Controllers": "10 years (or BIT failures)",
+            "Cargo Heaters": "8,000hrs (element resistance)",
+            "Zone Dampers": "20,000 cycles (position feedback)"
+        },
+        "geo_targets": [
+            "Hot climates + cargo temperature-sensitive operations",
+            "High-passenger-turnover routes + wear-intensive operations",
+            "Long-haul operations + passenger comfort"
+        ],
+        "boeing_targets": ["B737 ECS", "B777 ECS", "B787 ECS"],
+        "bombardier_targets": ["CRJ ECS", "Global ECS"],
+        "mro_targets": ["ECS maintenance", "Filter replacement", "Temperature calibration"]
+    },
+    
+    # ====================== AVIONICS SYSTEMS (Moderate/High Risk) ======================
+    "flight_management": {
+        "keywords": [
+            "FMS failure", "GPS loss", "navigation error", "waypoint deletion", "database corruption",
+            "VNAV failure", "LNAV deviation", "CDU blank", "flight plan loss", "sensor disagreement",
+            "IRS drift", "compass error", "ADIRU fault", "position error"
+        ],
+        "common_parts": [
+            "FMC", "CDU", "GPS", "IRS", "ADIRU", "COMPASS", "DATABASE", "PROCESSOR", "MEMORY",
+            "ANTENNA", "RECEIVER", "TRANSMITTER", "DISPLAY", "KEYBOARD", "NAVIGATION SENSOR"
+        ],
+        "failure_modes": [
+            "Software corruption", "Database expiry", "Hardware failure", "Antenna damage",
+            "Position drift", "Sensor disagreement", "Display failure", "Memory corruption",
+            "GPS jamming", "Compass deviation", "Processor overheating"
+        ],
+        "risk_level": "Moderate",
+        "replacement_interval": {
+            "FMC": "10 years (or MTBF)",
+            "CDU": "15,000hrs (display degradation)",
+            "GPS Receiver": "10 years (sensitivity test)",
+            "IRS": "15 years (drift check every 2 years)",
+            "Navigation Database": "28 days (regulatory)",
+            "ADIRU": "12 years (sensor calibration)",
+            "Compass": "5 years (deviation check)"
+        },
+        "geo_targets": [
+            "High-frequency routes (US domestic, Europe-Middle East)",
+            "Older fleets needing upgrades + EM interference environments",
+            "Long-haul operations + precision navigation"
+        ],
+        "boeing_targets": ["B737 FMS", "B777 FMS", "B787 FMS"],
+        "bombardier_targets": ["CRJ FMS", "Global FMS"],
+        "mro_targets": ["Avionics repair", "Navigation calibration", "Database update"]
+    },
+
+    "communication_systems": {
+        "keywords": [
+            "radio failure", "transponder fault", "TCAS alert", "ACARS down", "satcom loss",
+            "VHF static", "HF propagation", "intercom fault", "PA system", "datalink failure",
+            "ATC communication", "company frequency", "emergency frequency", "radio interference"
+        ],
+        "common_parts": [
+            "VHF RADIO", "HF RADIO", "TRANSPONDER", "TCAS", "ACARS", "SATCOM", "ANTENNA", 
+            "INTERCOM", "PA SYSTEM", "DATALINK", "TRANSMITTER", "RECEIVER", "COUPLER", "SPLITTER"
+        ],
+        "failure_modes": [
+            "Transmitter failure", "Receiver sensitivity loss", "Antenna VSWR high", 
+            "Frequency drift", "Modulation distortion", "Power output low", "Intermodulation",
+            "Static discharge", "Connector corrosion", "Software glitch"
+        ],
+        "risk_level": "Moderate",
+        "replacement_interval": {
+            "VHF Radios": "15 years (frequency accuracy)",
+            "HF Radios": "12 years (power output test)",
+            "Transponder": "10 years (reply efficiency)",
+            "TCAS": "15 years (sensitivity test)",
+            "ACARS": "10 years (BER test)",
+            "Antennas": "On-condition (VSWR > 2:1)",
+            "PA System": "20 years (audio quality)"
+        },
+        "geo_targets": [
+            "High-frequency routes (US domestic, Europe-Middle East)",
+            "Long-haul operations + oceanic routes",
+            "Older fleets needing upgrades + EM interference environments"
+        ],
+        "boeing_targets": ["B737 comm", "B777 comm", "B787 comm"],
+        "bombardier_targets": ["CRJ comm", "Global comm"],
+        "mro_targets": ["Radio repair", "Antenna replacement", "Communication test"]
+    },
+
+    "surveillance_systems": {
+        "keywords": [
+            "weather radar", "turbulence detection", "windshear alert", "EGPWS warning",
+            "radar altimeter", "DME failure", "ILS deviation", "localizer error", "glideslope",
+            "marker beacon", "ADF drift", "VOR error", "lightning detection"
+        ],
+        "common_parts": [
+            "WEATHER RADAR", "RADAR ALTIMETER", "DME", "ILS", "VOR", "ADF", "MARKER BEACON",
+            "EGPWS", "WINDSHEAR DETECTOR", "LIGHTNING DETECTOR", "ANTENNA", "RECEIVER", "PROCESSOR"
+        ],
+        "failure_modes": [
+            "Antenna rotation failure", "Transmitter power loss", "Receiver desensitization",
+            "Processor failure", "Display corruption", "False alerts", "Signal interference",
+            "Antenna icing", "Cable degradation", "Software bugs"
+        ],
+        "risk_level": "Moderate",
+        "replacement_interval": {
+            "Weather Radar": "12 years (power output test)",
+            "Radar Altimeter": "10 years (accuracy test)",
+            "DME": "15 years (range accuracy)",
+            "ILS Receiver": "12 years (course sensitivity)",
+            "VOR Receiver": "15 years (bearing accuracy)",
+            "EGPWS": "10 years (database update)",
+            "Lightning Detector": "8 years (sensitivity test)"
+        },
+        "geo_targets": [
+            "Harsh environments (desert, coastal) + long-haul operations",
+            "High-altitude routes + extreme temperature operations",
+            "Weather-intensive routes"
+        ],
+        "boeing_targets": ["B737 surveillance", "B777 surveillance", "B787 surveillance"],
+        "bombardier_targets": ["CRJ surveillance", "Global surveillance"],
+        "mro_targets": ["Radar maintenance", "Navigation aid test", "Antenna alignment"]
+    },
+
+    # ====================== SECONDARY SYSTEMS (Low/Moderate Risk) ======================
+    "cabin_systems": {
+        "keywords": [
+            "seat malfunction", "IFE failure", "PSU light", "oxygen mask", "lavatory fault",
+            "galley equipment", "bin latch", "reading light", "call button", "window shade",
+            "cabin lighting", "emergency lighting", "PA announcement", "cabin pressure"
+        ],
+        "common_parts": [
+            "SEAT", "IFE", "PSU", "OXYGEN MASK", "LAV UNIT", "GALLEY", "BIN LATCH", "LIGHT",
+            "CALL BUTTON", "WINDOW SHADE", "EMERGENCY LIGHT", "PA SPEAKER", "PRESSURE SENSOR",
+            "ENTERTAINMENT SYSTEM", "POWER OUTLET", "USB PORT", "READING LIGHT"
+        ],
+        "failure_modes": [
+            "Mechanical wear", "Electrical short", "Fabric deterioration", "Latch failure",
+            "Light bulb failure", "Speaker damage", "Sensor drift", "Water damage",
+            "Corrosion", "Impact damage", "Overuse wear"
+        ],
+        "risk_level": "Low",
+        "replacement_interval": {
+            "Seat Mechanisms": "On-condition",
+            "IFE Systems": "7 years (technology refresh)",
+            "PSUs": "10 years (LED degradation)",
+            "Oxygen Masks": "12 years (rubber degradation)",
+            "Lavatory Units": "5 years (sanitary requirements)",
+            "Bin Latches": "On-condition (10,000 cycles)",
+            "Emergency Lights": "10 years (battery capacity)",
+            "Reading Lights": "15,000hrs (LED life)"
+        },
+        "geo_targets": [
+            "High-passenger-turnover routes + wear-intensive operations",
+            "Long-haul operations + passenger comfort",
+            "High-frequency routes (US domestic, Europe-Middle East)"
+        ],
+        "boeing_targets": ["B737 cabin", "B777 cabin", "B787 cabin"],
+        "bombardier_targets": ["CRJ cabin", "Global cabin"],
+        "mro_targets": ["Cabin refurbishment", "IFE upgrade", "Seat repair"]
+    },
+
+    "cargo_systems": {
+        "keywords": [
+            "cargo door", "cargo loader", "barrier net", "cargo handling", "ULD restraint",
+            "smoke detector", "fire suppression", "cargo heating", "cargo lighting",
+            "cargo compartment", "main deck cargo", "lower deck cargo", "bulk cargo"
+        ],
+        "common_parts": [
+            "CARGO DOOR", "DOOR ACTUATOR", "CARGO LOADER", "BARRIER NET", "ULD RESTRAINT",
+            "SMOKE DETECTOR", "FIRE BOTTLE", "CARGO HEATER", "CARGO LIGHT", "POWER DRIVE UNIT",
+            "RESTRAINT FITTING", "CARGO PANEL", "CARGO LINING", "VENTILATION FAN"
+        ],
+        "failure_modes": [
+            "Door seal failure", "Actuator malfunction", "Net tear", "Restraint failure",
+            "Smoke detector contamination", "Fire bottle expiry", "Heater element failure",
+            "Light failure", "PDU motor failure", "Fitting wear"
+        ],
+        "risk_level": "Moderate",
+        "replacement_interval": {
+            "Cargo Doors": "On-condition (seal inspection)",
+            "Door Actuators": "15,000 cycles (or 10 years)",
+            "Barrier Nets": "5 years (or visible damage)",
+            "ULD Restraints": "On-condition (load test)",
+            "Smoke Detectors": "10 years (sensitivity test)",
+            "Fire Bottles": "5 years (pressure test)",
+            "Cargo Heaters": "8,000hrs (element test)",
+            "PDUs": "20,000hrs (motor test)"
+        },
+        "geo_targets": [
+            "Hot climates + cargo temperature-sensitive operations",
+            "High-frequency cargo routes",
+            "Harsh environments (desert, coastal) + long-haul operations"
+        ],
+        "boeing_targets": ["B747F cargo", "B777F cargo", "B767F cargo"],
+        "bombardier_targets": ["DHC-8 cargo"],
+        "mro_targets": ["Cargo system maintenance", "Door adjustment", "Fire system test"]
+    },
+
+    "ground_support": {
+        "keywords": [
+            "APU failure", "ground power", "air start", "hydraulic mule", "ground cooling",
+            "lavatory service", "water service", "fuel service", "catering lift", "baggage loader",
+            "pushback tug", "ground air conditioning", "external power", "ground testing"
+        ],
+        "common_parts": [
+            "APU", "GPU RECEPTACLE", "AIR START VALVE", "HYDRAULIC SERVICE", "GROUND COOLING",
+            "SERVICE PANEL", "WATER SERVICE", "FUEL SERVICE", "CATERING DOOR", "BAGGAGE DOOR",
+            "TOW BAR FITTING", "GROUND TEST POINT", "EXTERNAL POWER PLUG", "SERVICE EQUIPMENT"
+        ],
+        "failure_modes": [
+            "APU start failure", "Power receptacle damage", "Service valve leak",
+            "Panel corrosion", "Door mechanism failure", "Fitting wear", "Connector damage",
+            "Seal deterioration", "Switch failure", "Cable damage"
+        ],
+        "risk_level": "Low",
+        "replacement_interval": {
+            "APU": "On-condition (8,000hrs inspection)",
+            "Ground Power Receptacle": "On-condition (contact wear)",
+            "Service Valves": "5 years (leak test)",
+            "Service Panels": "10 years (corrosion inspection)",
+            "Catering Doors": "15,000 cycles (mechanism test)",
+            "Baggage Doors": "20,000 cycles (hinge inspection)",
+            "Tow Bar Fittings": "On-condition (crack inspection)",
+            "External Power Cables": "5 years (insulation test)"
+        },
+        "geo_targets": [
+            "High-frequency routes (US domestic, Europe-Middle East)",
+            "Harsh environments (desert, coastal) + long-haul operations",
+            "High-passenger-turnover routes + wear-intensive operations"
+        ],
+        "boeing_targets": ["All Boeing aircraft APU", "Ground service equipment"],
+        "bombardier_targets": ["All Bombardier aircraft APU", "Ground service equipment"],
+        "mro_targets": ["APU maintenance", "Ground equipment service", "Line maintenance support"]
+    },
+
+    # ====================== SPECIALIZED SYSTEMS BY CLIENT TYPE ======================
+    "regional_aircraft_specific": {
+        "keywords": [
+            "turboprop engine", "propeller", "beta range", "reverse thrust", "ice protection",
+            "de-icing boots", "pitot heat", "static port", "regional operations", "short runway",
+            "quick turnaround", "simplified systems", "cost-effective maintenance"
+        ],
+        "common_parts": [
+            "PROPELLER", "GOVERNOR", "BETA VALVE", "DE-ICE BOOT", "PITOT HEATER", "STATIC PORT",
+            "ICE DETECTOR", "PROP HEATER", "OVERSPEED GOVERNOR", "FEATHER VALVE", "UNFEATHER PUMP",
+            "PROP CONTROLLER", "BETA FEEDBACK", "TORQUE SENSOR", "RPM SENSOR"
+        ],
+        "failure_modes": [
+            "Propeller overspeed", "Beta valve malfunction", "Ice accumulation", "Boot delamination",
+            "Pitot blockage", "Governor hunting", "Feather valve stuck", "Prop imbalance",
+            "Torque sensor drift", "RPM sensor failure"
+        ],
+        "risk_level": "High",
+        "replacement_interval": {
+            "Propellers": "On-condition (6,000hrs inspection)",
+            "Governors": "5,000hrs (or hunting)",
+            "De-ice Boots": "3 years (or delamination)",
+            "Pitot Heaters": "2 years (current draw test)",
+            "Ice Detectors": "5 years (sensitivity test)",
+            "Beta Valves": "8,000hrs (response test)",
+            "Prop Controllers": "10 years (calibration)",
+            "Torque Sensors": "5,000hrs (accuracy test)"
+        },
+        "geo_targets": [
+            "High-frequency routes (US domestic, Europe-Middle East)",
+            "High-cycle operations + harsh environments",
+            "Regional routes + weather challenges"
+        ],
+        "boeing_targets": ["DHC-8 series"],
+        "bombardier_targets": ["DHC-8", "ATR aircraft"],
+        "mro_targets": ["Turboprop maintenance", "Propeller overhaul", "Ice protection systems"]
+    },
+
+    "wide_body_specific": {
+        "keywords": [
+            "long-haul operations", "ETOPS", "cargo handling", "passenger capacity", "fuel efficiency",
+            "advanced avionics", "fly-by-wire", "composite structures", "extended range", "oceanic ops",
+            "crew rest", "multiple class", "entertainment systems", "galley complexity"
+        ],
+        "common_parts": [
+            "COMPOSITE PANEL", "ADVANCED FBW", "ETOPS EQUIPMENT", "CREW REST", "MULTIPLE GALLEYS",
+            "ADVANCED IFE", "CARGO SYSTEM", "LONG RANGE FUEL", "OCEANIC COMM", "ADVANCED WEATHER RADAR",
+            "ENHANCED VISION", "SYNTHETIC VISION", "DATALINK", "SATCOM", "ADVANCED AUTOPILOT"
+        ],
+        "failure_modes": [
+            "Composite delamination", "FBW software glitch", "ETOPS system failure", "IFE network down",
+            "Cargo system jam", "Fuel management error", "Comm system loss", "Weather radar failure",
+            "Vision system malfunction", "Autopilot disconnect"
+        ],
+        "risk_level": "High",
+        "replacement_interval": {
+            "Composite Panels": "On-condition (NDT inspection)",
+            "FBW Computers": "On-condition (BIT failures)",
+            "ETOPS Equipment": "Per ETOPS requirements",
+            "IFE Systems": "7 years (technology refresh)",
+            "Cargo Systems": "On-condition (cycle count)",
+            "Fuel Management": "10,000hrs (calibration)",
+            "Satcom": "12 years (link quality test)",
+            "Weather Radar": "15 years (power output test)"
+        },
+        "geo_targets": [
+            "Harsh environments (desert, coastal) + long-haul operations",
+            "High-altitude routes + extreme temperature operations",
+            "Oceanic routes + ETOPS operations"
+        ],
+        "boeing_targets": ["B747", "B777", "B787", "B767"],
+        "bombardier_targets": ["Global series"],
+        "mro_targets": ["Heavy maintenance", "Composite repair", "Advanced systems"]
+    },
+
+    "narrow_body_specific": {
+        "keywords": [
+            "high frequency", "quick turnaround", "short haul", "high cycle", "domestic routes",
+            "simplified maintenance", "cost effective", "high utilization", "gate to gate",
+            "single aisle", "standard configuration", "line maintenance friendly"
+        ],
+        "common_parts": [
+            "STANDARD AVIONICS", "SIMPLE GALLEYS", "BASIC IFE", "STANDARD SEATING", "LINE REPLACEABLE",
+            "QUICK ACCESS", "MODULAR DESIGN", "STANDARD INTERFACES", "SIMPLIFIED SYSTEMS",
+            "MAINTENANCE FRIENDLY", "COST EFFECTIVE PARTS", "HIGH CYCLE RATED"
+        ],
+        "failure_modes": [
+            "High cycle fatigue", "Wear from frequent use", "Quick turnaround stress", 
+            "Gate equipment damage", "Passenger wear", "Frequent pressurization",
+            "Landing gear wear", "Brake overuse", "System cycling fatigue"
+        ],
+        "risk_level": "Moderate",
+        "replacement_interval": {
+            "High Cycle Components": "Cycle-based (vs. time)",
+            "Landing Gear Parts": "200-500 landings",
+            "Brake Components": "300-800 landings",
+            "Door Seals": "10,000 cycles",
+            "Cabin Components": "On-condition (wear)",
+            "Avionics": "Standard intervals",
+            "Engine Parts": "Cycle-adjusted intervals",
+            "Pressurization Components": "Cycle-based"
+        },
+        "geo_targets": [
+            "High-frequency routes (US domestic, Europe-Middle East)",
+            "High-cycle operations + harsh environments",
+            "High-passenger-turnover routes + wear-intensive operations"
+        ],
+        "boeing_targets": ["B737 series", "B757", "B767-300"],
+        "bombardier_targets": ["CRJ series"],
+        "mro_targets": ["Line maintenance", "Quick turnaround support", "High cycle inspection"]
+    },
+
+    "cargo_aircraft_specific": {
+        "keywords": [
+            "cargo operations", "freight", "heavy loading", "cargo handling", "main deck cargo",
+            "cargo doors", "loading systems", "restraint systems", "cargo fire protection",
+            "all-cargo configuration", "freight efficiency", "cargo capacity"
+        ],
+        "common_parts": [
+            "CARGO DOOR SYSTEM", "MAIN DECK LOADER", "CARGO RESTRAINTS", "ULD SYSTEMS",
+            "CARGO FIRE SUPPRESSION", "CARGO HANDLING", "FREIGHT DOORS", "LOADING EQUIPMENT",
+            "CARGO BARRIERS", "RESTRAINT FITTINGS", "CARGO SENSORS", "LOAD DISTRIBUTION"
+        ],
+        "failure_modes": [
+            "Door seal failure", "Loader malfunction", "Restraint failure", "Fire system fault",
+            "Handling equipment jam", "Door actuator failure", "Barrier damage", "Fitting wear",
+            "Sensor malfunction", "Load shift", "Cargo contamination"
+        ],
+        "risk_level": "High",
+        "replacement_interval": {
+            "Cargo Doors": "On-condition (seal inspection)",
+            "Loading Systems": "15,000 cycles",
+            "Restraint Systems": "On-condition (load test)",
+            "Fire Suppression": "Annual inspection",
+            "Handling Equipment": "10,000hrs",
+            "Door Actuators": "12,000 cycles",
+            "Cargo Barriers": "5 years (or damage)",
+            "Load Sensors": "2 years (calibration)"
+        },
+        "geo_targets": [
+            "Hot climates + cargo temperature-sensitive operations",
+            "Harsh environments (desert, coastal) + long-haul operations",
+            "High-frequency cargo routes"
+        ],
+        "boeing_targets": ["B747F", "B777F", "B767F", "B737F"],
+        "bombardier_targets": ["DHC-8F"],
+        "mro_targets": ["Cargo system specialists", "Freighter conversion", "Cargo equipment"]
+    }
+}
+
+# ====================== CLIENT SEGMENTATION MATRIX ======================
+client_segments = {
+    "regional_airlines": {
+        "risk_tolerance": ["Low", "Moderate"],
+        "preferred_intervals": ["Long-term", "On-condition"],
+        "primary_systems": ["regional_aircraft_specific", "narrow_body_specific"],
+        "geo_focus": ["High-frequency routes (US domestic, Europe-Middle East)"],
+        "aircraft_types": ["CRJ", "DHC-8", "ATR", "ERJ"],
+        "maintenance_philosophy": "Cost-effective, predictable intervals"
+    },
+    
+    "major_airlines": {
+        "risk_tolerance": ["Moderate", "High"],
+        "preferred_intervals": ["Balanced", "Performance-based"],
+        "primary_systems": ["narrow_body_specific", "wide_body_specific"],
+        "geo_focus": ["High-frequency routes", "Long-haul operations"],
+        "aircraft_types": ["B737", "A320", "B777", "A330", "B787"],
+        "maintenance_philosophy": "Reliability-focused, advanced monitoring"
+    },
+    
+    "cargo_operators": {
+        "risk_tolerance": ["High", "Extreme"],
+        "preferred_intervals": ["Performance-based", "On-condition"],
+        "primary_systems": ["cargo_aircraft_specific", "wide_body_specific"],
+        "geo_focus": ["Hot climates + cargo operations", "Harsh environments"],
+        "aircraft_types": ["B747F", "B777F", "B767F", "A330F"],
+        "maintenance_philosophy": "Performance-driven, 24/7 operations"
+    },
+    
+    "mro_providers": {
+        "risk_tolerance": ["All levels"],
+        "preferred_intervals": ["Frequent replacement", "Consumables"],
+        "primary_systems": ["All systems"],
+        "geo_focus": ["Universal demand", "All environments"],
+        "aircraft_types": ["Multi-type capability"],
+        "maintenance_philosophy": "Inventory turnover, broad coverage"
+    },
+    
+    "legacy_fleet_operators": {
+        "risk_tolerance": ["Moderate", "High"],
+        "preferred_intervals": ["Extended intervals", "Upgrade-focused"],
+        "primary_systems": ["Older aircraft systems", "Upgrade components"],
+        "geo_focus": ["Older fleets needing upgrades"],
+        "aircraft_types": ["Older Boeing", "Older Airbus", "Classic aircraft"],
+        "maintenance_philosophy": "Life extension, selective upgrades"
+    },
+    
+    "low_cost_carriers": {
+        "risk_tolerance": ["Low", "Moderate"],
+        "preferred_intervals": ["Cost-optimized", "High-cycle rated"],
+        "primary_systems": ["narrow_body_specific", "simplified systems"],
+        "geo_focus": ["High-frequency routes", "Cost-sensitive markets"],
+        "aircraft_types": ["B737", "A320 family", "Single-aisle focus"],
+        "maintenance_philosophy": "Cost-minimization, high utilization"
+    }
+}
+
+# ====================== FILTERING EXAMPLES ======================
+def filter_products_for_client(client_type, risk_levels=None, systems=None):
+    """
+    Example filtering function for client segmentation
+    
+    Args:
+        client_type: One of the client_segments keys
+        risk_levels: List of acceptable risk levels
+        systems: List of relevant aircraft systems
+    
+    Returns:
+        Filtered product dictionary
+    """
+    
+    client_profile = client_segments.get(client_type, {})
+    
+    if not risk_levels:
+        risk_levels = client_profile.get("risk_tolerance", ["All"])
+    
+    if not systems:
+        systems = client_profile.get("primary_systems", list(aircraft_systems.keys()))
+    
+    filtered_products = {}
+    
+    for system_name, system_data in aircraft_systems.items():
+        if system_name in systems or "All" in systems:
+            system_risk = system_data.get("risk_level", "Unknown")
+            if system_risk in risk_levels or "All" in risk_levels:
+                filtered_products[system_name] = system_data
+    
+    return filtered_products
+
+# ====================== USAGE EXAMPLES ======================
+"""
+# Example 1: Regional Airlines
+regional_products = filter_products_for_client(
+    client_type="regional_airlines",
+    risk_levels=["Low", "Moderate"],
+    systems=["regional_aircraft_specific", "landing_gear", "engines"]
+)
+
+# Example 2: Cargo Operators  
+cargo_products = filter_products_for_client(
+    client_type="cargo_operators",
+    risk_levels=["High", "Extreme"],
+    systems=["cargo_aircraft_specific", "fuel_systems", "hydraulic_systems"]
+)
+
+# Example 3: MRO Providers (all products with frequent replacement)
+mro_products = {}
+for system_name, system_data in aircraft_systems.items():
+    intervals = system_data.get("replacement_interval", {})
+    frequent_items = {k: v for k, v in intervals.items() 
+                     if any(term in v.lower() for term in ["months", "500hrs", "1000hrs", "cycles"])}
+    if frequent_items:
+        mro_products[system_name] = {**system_data, "replacement_interval": frequent_items}
+"""
