@@ -1,6 +1,4 @@
-# ====================== COMPREHENSIVE AIRCRAFT SYSTEMS FOR CLIENT SEGMENTATION ======================
-aircraft_systems = {
-    # ====================== CRITICAL SYSTEMS (Extreme Risk) ======================
+{
     "landing_gear": {
         "keywords": [
             "undercarriage", "landing gear", "gear collapse", "gear-up landing", "tire failure", 
@@ -114,7 +112,6 @@ aircraft_systems = {
         "mro_targets": ["Flight control rigging", "Actuator overhaul", "Computer repair"]
     },
 
-    # ====================== ESSENTIAL SYSTEMS (High Risk) ======================
     "fuel_systems": {
         "keywords": [
             "fuel leak", "fuel contamination", "fuel pump", "fuel valve", "fuel filter", 
@@ -299,7 +296,6 @@ aircraft_systems = {
         "mro_targets": ["ECS maintenance", "Filter replacement", "Temperature calibration"]
     },
     
-    # ====================== AVIONICS SYSTEMS (Moderate/High Risk) ======================
     "flight_management": {
         "keywords": [
             "FMS failure", "GPS loss", "navigation error", "waypoint deletion", "database corruption",
@@ -405,7 +401,6 @@ aircraft_systems = {
         "mro_targets": ["Radar maintenance", "Navigation aid test", "Antenna alignment"]
     },
 
-    # ====================== SECONDARY SYSTEMS (Low/Moderate Risk) ======================
     "cabin_systems": {
         "keywords": [
             "seat malfunction", "IFE failure", "PSU light", "oxygen mask", "lavatory fault",
@@ -517,7 +512,6 @@ aircraft_systems = {
         "mro_targets": ["APU maintenance", "Ground equipment service", "Line maintenance support"]
     },
 
-    # ====================== SPECIALIZED SYSTEMS BY CLIENT TYPE ======================
     "regional_aircraft_specific": {
         "keywords": [
             "turboprop engine", "propeller", "beta range", "reverse thrust", "ice protection",
@@ -667,117 +661,3 @@ aircraft_systems = {
     }
 }
 
-# ====================== CLIENT SEGMENTATION MATRIX ======================
-client_segments = {
-    "regional_airlines": {
-        "risk_tolerance": ["Low", "Moderate"],
-        "preferred_intervals": ["Long-term", "On-condition"],
-        "primary_systems": ["regional_aircraft_specific", "narrow_body_specific"],
-        "geo_focus": ["High-frequency routes (US domestic, Europe-Middle East)"],
-        "aircraft_types": ["CRJ", "DHC-8", "ATR", "ERJ"],
-        "maintenance_philosophy": "Cost-effective, predictable intervals"
-    },
-    
-    "major_airlines": {
-        "risk_tolerance": ["Moderate", "High"],
-        "preferred_intervals": ["Balanced", "Performance-based"],
-        "primary_systems": ["narrow_body_specific", "wide_body_specific"],
-        "geo_focus": ["High-frequency routes", "Long-haul operations"],
-        "aircraft_types": ["B737", "A320", "B777", "A330", "B787"],
-        "maintenance_philosophy": "Reliability-focused, advanced monitoring"
-    },
-    
-    "cargo_operators": {
-        "risk_tolerance": ["High", "Extreme"],
-        "preferred_intervals": ["Performance-based", "On-condition"],
-        "primary_systems": ["cargo_aircraft_specific", "wide_body_specific"],
-        "geo_focus": ["Hot climates + cargo operations", "Harsh environments"],
-        "aircraft_types": ["B747F", "B777F", "B767F", "A330F"],
-        "maintenance_philosophy": "Performance-driven, 24/7 operations"
-    },
-    
-    "mro_providers": {
-        "risk_tolerance": ["All levels"],
-        "preferred_intervals": ["Frequent replacement", "Consumables"],
-        "primary_systems": ["All systems"],
-        "geo_focus": ["Universal demand", "All environments"],
-        "aircraft_types": ["Multi-type capability"],
-        "maintenance_philosophy": "Inventory turnover, broad coverage"
-    },
-    
-    "legacy_fleet_operators": {
-        "risk_tolerance": ["Moderate", "High"],
-        "preferred_intervals": ["Extended intervals", "Upgrade-focused"],
-        "primary_systems": ["Older aircraft systems", "Upgrade components"],
-        "geo_focus": ["Older fleets needing upgrades"],
-        "aircraft_types": ["Older Boeing", "Older Airbus", "Classic aircraft"],
-        "maintenance_philosophy": "Life extension, selective upgrades"
-    },
-    
-    "low_cost_carriers": {
-        "risk_tolerance": ["Low", "Moderate"],
-        "preferred_intervals": ["Cost-optimized", "High-cycle rated"],
-        "primary_systems": ["narrow_body_specific", "simplified systems"],
-        "geo_focus": ["High-frequency routes", "Cost-sensitive markets"],
-        "aircraft_types": ["B737", "A320 family", "Single-aisle focus"],
-        "maintenance_philosophy": "Cost-minimization, high utilization"
-    }
-}
-
-# ====================== FILTERING EXAMPLES ======================
-def filter_products_for_client(client_type, risk_levels=None, systems=None):
-    """
-    Example filtering function for client segmentation
-    
-    Args:
-        client_type: One of the client_segments keys
-        risk_levels: List of acceptable risk levels
-        systems: List of relevant aircraft systems
-    
-    Returns:
-        Filtered product dictionary
-    """
-    
-    client_profile = client_segments.get(client_type, {})
-    
-    if not risk_levels:
-        risk_levels = client_profile.get("risk_tolerance", ["All"])
-    
-    if not systems:
-        systems = client_profile.get("primary_systems", list(aircraft_systems.keys()))
-    
-    filtered_products = {}
-    
-    for system_name, system_data in aircraft_systems.items():
-        if system_name in systems or "All" in systems:
-            system_risk = system_data.get("risk_level", "Unknown")
-            if system_risk in risk_levels or "All" in risk_levels:
-                filtered_products[system_name] = system_data
-    
-    return filtered_products
-
-# ====================== USAGE EXAMPLES ======================
-"""
-# Example 1: Regional Airlines
-regional_products = filter_products_for_client(
-    client_type="regional_airlines",
-    risk_levels=["Low", "Moderate"],
-    systems=["regional_aircraft_specific", "landing_gear", "engines"]
-)
-
-# Example 2: Cargo Operators  
-cargo_products = filter_products_for_client(
-    client_type="cargo_operators",
-    risk_levels=["High", "Extreme"],
-    systems=["cargo_aircraft_specific", "fuel_systems", "hydraulic_systems"]
-)
-
-# Example 3: MRO Providers (all products with frequent replacement)
-mro_products = {}
-for system_name, system_data in aircraft_systems.items():
-    intervals = system_data.get("replacement_interval", {})
-    frequent_items = {k: v for k, v in intervals.items() 
-                     if any(term in v.lower() for term in ["months", "500hrs", "1000hrs", "cycles"])}
-    if frequent_items:
-        mro_products[system_name] = {**system_data, "replacement_interval": frequent_items}
-"""

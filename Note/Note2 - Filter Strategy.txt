@@ -7,6 +7,7 @@ Geo Targets: 'High-frequency routes (US domestic, Europe-Middle East)'
 Boeing/Bombardier Targets: Focus on common regional aircraft
 
 Why this works: Regional airlines operate shorter routes with frequent cycles but need reliable, cost-effective parts with predictable maintenance schedules.
+
 Client Type 2: Cargo Airlines (Performance-Focused)
 Filter Criteria:
 
@@ -16,6 +17,7 @@ Geo Targets: 'Harsh environments (desert, coastal) + long-haul operations', 'Hot
 MRO Targets: Heavy maintenance specialists
 
 Why this works: Cargo operations run 24/7 in harsh conditions and need high-performance parts even if they require more frequent monitoring.
+
 Client Type 3: MRO Service Providers
 Filter Criteria:
 
@@ -25,6 +27,7 @@ Geo Targets: 'Safety-critical universal demand + harsh environments'
 MRO Targets: Primary focus
 
 Why this works: MRO providers need a broad inventory of consumable parts that turn over quickly and serve multiple aircraft types.
+
 Client Type 4: Legacy Fleet Operators
 Filter Criteria:
 
