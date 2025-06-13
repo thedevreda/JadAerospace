@@ -3,20 +3,30 @@ Hi Reda, thanks for bringing this dataset to me. Let’s go through it together.
 
 🔍 QUESTIONS FROM STAKEHOLDER:
 
-Can you tell me how many parts fall under each Air System Category?
+Geographic Analysis:
 
-Which Risk Level is most common across parts?
+Which regions have the highest concentration of aircraft parts?
+Where should we focus our sales efforts geographically?
+Are we adequately covering high-potential markets like Europe and the US?
 
-Which part categories have the most High Risk parts?
+Product Strategy:
 
-Can we get a chart showing Risk Level per Air System Category?
+What's our product mix across different air system categories?
+Which categories (fuel systems, engines, flight management, flight controls) represent our biggest opportunities?
+How diversified is our product portfolio?
 
-What are the most common Replacement Intervals and how do they differ by Air System Category?
+Inventory & Operations:
 
-Can we visualize the distribution of replacement cycles?
+Which parts need immediate attention based on replacement intervals?
+What's the maintenance schedule priority for different aircraft types?
+How do we align our sales efforts with Boeing vs. Bombardier targets?
+Which parts need frequent replacement (5,000hrs intervals)?
+What aircraft models do our parts serve (Boeing vs Bombardier targets)?
 
-Can you identify which parts are most associated with "harsh environments" or "older fleets"?
+How Sales Teams Can Use This Data:
 
-Can you build a tag-based word cloud or bar chart using the Geographical Targets field?
-
-Which parts are “high risk” but have long replacement intervals? That could suggest overlooked risks.
+Territory Planning: Use geographic distribution to allocate sales resources and identify underserved markets
+Product Prioritization: Focus on fuel systems (62.66%) and engines (25.71%) as primary revenue drivers
+Customer Targeting: Leverage Boeing/Bombardier target information for account-based selling
+Urgency-Based Selling: Use replacement intervals to create urgency in sales conversations
+    
