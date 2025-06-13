@@ -38,20 +38,26 @@ Hi Reda, thanks for bringing this dataset to me. Let’s go through it together.
     This helps us stock and promote the right products — for example, if hydraulic systems are most replaced, 
     we push those parts more in marketing and sales.
 
+4. What is the highest replacement parts name?
 
-4. What are my best-selling and worst-selling products?
+    Parts like tires, brakes, and seals tend to have the highest replacement rates because they undergo the most wear and tear during operations. 
+    For example, tires and brakes face constant stress from takeoffs and landings, 
+    while seals ensure airtight and fluid-tight conditions that degrade over time. 
+    Focusing on these high-demand parts in sales campaigns can significantly increase turnover and customer satisfaction.
+
+5. What are my best-selling and worst-selling products?
 
     This helps you know what’s working and what’s not. You can promote your best-sellers even more, 
     bundle them with slow movers, or stop selling underperforming parts.
     Action: Focus marketing and inventory on high performers and fix or replace low performers.
 
-5. Who are my top customers and what are they buying?
+6. Who are my top customers and what are they buying?
 
     Identifying your top clients shows you who to keep happy and what they prefer. You can build strong relationships, 
     offer them better deals, or upsell related parts.
     Action: Create loyalty programs or targeted offers for top clients to boost repeat purchases.
 
-6. Which regions or customer segments generate the most revenue?
+7. Which regions or customer segments generate the most revenue?
 
     This shows you where your money is coming from. It helps you focus sales efforts on the most profitable markets or 
     types of clients (like cargo vs regional airlines).
