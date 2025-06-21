@@ -1,21 +1,42 @@
 👔 Stakeholder Mode: ON
-Hi Reda, thanks for bringing this dataset to me. Let’s go through it together. I’ll start by asking some business-oriented questions to help you clarify your goals and develop the right visualizations.
 
+# Who are we desgning for? 
+
+    salers at Jadero
+
+# What problem are we trying to solve? 
+
+    Helping salers to make decisions of what products and categories to focus on by using dashboard
+    Improving the process of selling to the clients by recommend the effective locations and  client 
+
+# What specific questions do they need answers to? 
+
+    What are effective locations to focus on?
+    Who are the clients we are focusing on?
+    What are the air system categories?
+    What is the highest replacement parts name?
+    What are my best-selling and worst-selling products?
+    Who are my top customers and what are they buying?
+    Which regions or customer segments generate the most revenue?
+
+# How often will the dashboard be reviewed?
+
+    As they need it 
+
+
+
+
+🔍 QUESTIONS FROM STAKEHOLDER:
 
 # Sales intelligence map:
-
     Where to sell (Geography)
     Who to target (Client type)
     What to push (Product category)
 
 # The core of a sales growth strategy:
-    
     What sells 
     Who buys
     Where to focus 
-
-
-🔍 QUESTIONS FROM STAKEHOLDER:
 
 1. What are effective locations to focus on?
 
@@ -62,3 +83,6 @@ Hi Reda, thanks for bringing this dataset to me. Let’s go through it together.
     This shows you where your money is coming from. It helps you focus sales efforts on the most profitable markets or 
     types of clients (like cargo vs regional airlines).
     Action: Invest in regions and client types that bring the highest returns.
+
+    Who are my top customers and what are they buying?
+    Which regions or customer segments generate the most revenue?

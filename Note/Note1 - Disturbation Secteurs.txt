@@ -13,19 +13,16 @@ Boeing Operators (since you work with Boeing):
 Cargo Airlines: FedEx, UPS - heavy landing gear wear from frequent operations
 
 Bombardier Focus:
-
 Regional Airlines: SkyWest, Republic Airways, Jazz Aviation
 Business Aviation: NetJets, Flexjet for CRJ series parts
 
 MRO Targets by Specialization:
-
 Heavy Maintenance: Lufthansa Technik, Air France Industries, Singapore Technologies
 Component Repair: AAR Corp, StandardAero (for your avionics transducers)
 Landing Gear Specialists: Safran Landing Systems service centers
 Quick-turn MROs: Timco, ST Aerospace (for consumables like tires)
 
 Geographic Targeting:
-
 High-frequency routes (Europe-Middle East, US domestic) = more tire replacements
 Harsh environments (desert, coastal) = more fuel system seal degradation
 Older fleets = more avionics upgrades needed
